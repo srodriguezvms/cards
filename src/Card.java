@@ -3,6 +3,7 @@ import processing.core.PApplet;
 public class Card {
     private Rank rank;
     private Suit suit;
+    private int value;
 
 
     public Card(){
@@ -18,7 +19,9 @@ public class Card {
     public Card(String mySuit, int rankValue){
         suit = new Suit(mySuit);
         rank = new Rank(rankValue);
-        System.out.println("Card: "+rank+" of "+suit);
+        value = rank.getValue();
+        //System.out.println(rank.getValue());
+        System.out.println("Card: "+value+" of "+suit);
     }
 
     //Accessor Method
@@ -26,8 +29,8 @@ public class Card {
     public Suit getSuit(){
         return suit;
     }
-    public Rank getValue(){
-        return rank;
+    public int getValue(){
+        return value;
     }
 
 

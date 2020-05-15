@@ -10,9 +10,9 @@ public class Deck {
         // 4 suits: Spades, Hearts, Diamonds, and Clubs
         // 13 values: Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King
 
-        // Generates numerical ranks
-        for(int i = 2; i <= 10; i++){
-
+        // Spades suit cards
+        for(int i = 1; i < 10; i++){
+            deck[i] = new Card("Spades", i+1);
         }
 
 

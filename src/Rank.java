@@ -3,17 +3,13 @@ public class Rank
     private int value;
     private String name;
 
-    public Rank ()
-    {
-    }
 
-    public Rank (int rankValue)
+    public Rank(int rankValue)
     {
         value = rankValue;
-
     }
 
-    public Rank (String rankName)
+    public Rank(String rankName)
     {
         name = rankName;
     }

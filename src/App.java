@@ -15,8 +15,9 @@ public class App extends PApplet
         // 13 values: Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King
 
         size(800,600);
+        int var = 6;
         Card card0 = new Card("Spades", "Ace");
-        Card card1 = new Card("Diamonds",2);
+        Card card1 = new Card("Diamonds",7);
 
         /*card0.setName("Ace");
         card0.setSuit("Spades");
@@ -47,6 +48,8 @@ public class App extends PApplet
         deck0.addCard(card1);
 
         deck0.shuffleDeck();*/
+
+        Deck deck = new Deck();
 
 
 
