@@ -1,12 +1,21 @@
 public class Rank
 {
-    private String name;
     private int value;
+    private String name;
 
-    public Rank (String rankName, int rankValue)
+    public Rank ()
     {
-        name=rankName;
+    }
+
+    public Rank (int rankValue)
+    {
         value = rankValue;
+
+    }
+
+    public Rank (String rankName)
+    {
+        name = rankName;
     }
 
     public String toString()
